@@ -1,4 +1,3 @@
-Got it. Here is the final `README.md` for your project, with the filename correctly set to **`ascii_video_player.py`**.
 
 -----
 
