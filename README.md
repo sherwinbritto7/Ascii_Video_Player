@@ -1,4 +1,4 @@
-That's the final piece\! Here is a ready-to-use **`README.md`** file for your GitHub repository, complete with instructions, requirements, and an explanation of the FPS synchronization.
+Got it. Here is the final `README.md` for your project, with the filename correctly set to **`ascii_video_player.py`**.
 
 -----
 
@@ -25,9 +25,9 @@ pip install opencv-python pillow numpy
 
 ## How to Run 🚀
 
-1.  **Prepare Files:** Place your video file (e.g., `my_movie.mp4`) in the same directory as the Python script (`simple_fps_player.py`).
+1.  **Prepare Files:** Place your video file (e.g., `my_movie.mp4`) in the same directory as the Python script (**`ascii_video_player.py`**).
 
-2.  **Edit Script:** Open `simple_fps_player.py` and modify the following line in the `if __name__ == "__main__":` block to match your video file's name:
+2.  **Edit Script:** Open **`ascii_video_player.py`** and modify the following line in the `if __name__ == "__main__":` block to match your video file's name:
 
     ```python
     VIDEO_FILE = 'my_movie.mp4' 
@@ -42,14 +42,14 @@ pip install opencv-python pillow numpy
 4.  **Execute:** Run the script from your terminal:
 
     ```bash
-    python simple_fps_player.py
+    python ascii_video_player.py
     ```
 
 ## How FPS Synchronization Works ⏱️
 
-The script ensures perfect playback timing using the following logic:
+The script ensures consistent playback timing using the following steps for every frame:
 
-1.  **Target Delay:** It first reads the original video's FPS (e.g., 24 FPS) and calculates the exact time each frame *should* take: **`Target Delay = 1 / FPS`** ($\approx 0.0416$ seconds for 24 FPS).
+1.  **Target Delay:** It reads the original video's FPS (e.g., 24 FPS) and calculates the exact time each frame *should* take: **`Target Delay = 1 / FPS`** ($\approx 0.0416$ seconds for 24 FPS).
 2.  **Measure Processing Time:** It measures how long it takes to process the frame (read, convert to ASCII, and print to the terminal).
 3.  **Pause:** It subtracts the processing time from the target delay. If the result is positive, it uses `time.sleep()` to pause for the remaining duration.
 
